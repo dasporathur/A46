@@ -29,21 +29,21 @@
 
 ## 1. Introduction
 
-### 1.1 Problem statement and research motivation (100 words)
+### 1.1 Problem statement and research motivation 
 
 Home advantage in football has been a topic of extensive research in sports analytics. Understanding whether teams perform significantly better when playing at home versus away is crucial for coaches, analysts, and betting markets. This phenomenon, known as "home advantage," has been documented across various sports (Pollard & Pollard, 2005). In international football, factors such as crowd support, familiarity with the venue, and reduced travel fatigue may contribute to enhanced home performance. This study investigates whether home teams score significantly more goals than away teams using a comprehensive dataset of international football matches spanning over 150 years.
 
-### 1.2 The data set (75 words)
+### 1.2 The data set 
 
 The dataset comprises 48,850 international football match results from 1872 to 2025. It includes variables such as match date, home team, away team, home score, away score, tournament type, city, country, and neutral venue indicator. The data was sourced from the international football results repository and contains matches from FIFA World Cup, continental championships, and friendly matches. This comprehensive dataset provides a robust foundation for analyzing scoring patterns in international football across different eras and competitions.
 
-### 1.3 Research question (50 words)
+### 1.3 Research question 
 
 **Research Question:** Do home teams score significantly more goals than away teams in international football matches?
 
 This question addresses the fundamental concept of home advantage in football by comparing goal-scoring performance between home and away teams across all international matches in the dataset.
 
-### 1.4 Null hypothesis and alternative hypothesis (H0/H1) (100 words)
+### 1.4 Null hypothesis and alternative hypothesis (H0/H1) 
 
 **Null Hypothesis (H0):** There is no significant difference in the mean number of goals scored by home teams compared to away teams in international football matches. Mathematically: μ_home = μ_away
 
@@ -55,7 +55,7 @@ This is a one-tailed hypothesis test as we specifically hypothesize that home te
 
 ## 2. Background research
 
-### 2.1 Research papers (at least 3 relevant to your topic / DS) (200 words)
+### 2.1 Research papers (at least 3 relevant to your topic / DS) 
 
 **1. Pollard & Pollard (2005)** conducted extensive research on home advantage in football, demonstrating that home teams win approximately 60% of matches across various leagues and competitions. Their work established that home advantage is a consistent phenomenon in football, with crowd support and familiarity being key contributing factors.
 
@@ -65,7 +65,7 @@ This is a one-tailed hypothesis test as we specifically hypothesize that home te
 
 These studies collectively establish that home advantage is well-documented in football, with goal-scoring being a primary metric for measuring this advantage. However, most research focuses on club football rather than international matches, creating a research gap that this study addresses.
 
-### 2.2 Why RQ is of interest (research gap and future directions according to the literature) (100 words)
+### 2.2 Why RQ is of interest (research gap and future directions according to the literature) 
 
 While home advantage has been extensively studied in club football, international football presents unique characteristics that warrant separate investigation. International matches often involve neutral venues, different crowd compositions, and varying travel distances. Understanding home advantage in this context is valuable for FIFA rankings, tournament seeding, and match scheduling. Furthermore, the dataset's historical span allows for temporal analysis of how home advantage may have changed over time with improvements in travel, training, and professionalization of international football. Future research could examine how home advantage varies by continent, tournament type, or era, providing deeper insights into this phenomenon.
 
@@ -73,18 +73,18 @@ While home advantage has been extensively studied in club football, internationa
 
 ## 3. Visualisation
 
-### 3.1 Appropriate plot for the RQ output of an R script (NOT a screenshot) (50 words)
+### 3.1 Appropriate plot for the RQ output of an R script (NOT a screenshot) 
 
 A boxplot comparison was chosen to visualize the distribution of goals scored by home versus away teams. This plot type effectively displays the central tendency, spread, and potential outliers in both groups, making it ideal for comparing two distributions. The histogram supplements this by showing the frequency distribution of goals for each group.
 
 **Main Visualization:** Boxplot comparing home vs away goals (see `boxplot_comparison.png`)
 **Supplementary Visualization:** Histograms showing goal distributions (see `histogram_goals.png`)
 
-### 3.2 Additional information relating to understanding the data (optional) (50 words)
+### 3.2 Additional information relating to understanding the data (optional) 
 
 The boxplot reveals that both home and away goal distributions are right-skewed, with most matches having low scores (0-3 goals) and occasional high-scoring outliers. The median home goals appear higher than away goals, with home teams showing a slightly wider interquartile range, suggesting more variability in home performance.
 
-### 3.3 Useful information for the data understanding (50 words)
+### 3.3 Useful information for the data understanding 
 
 Key observations from the visualizations:
 - Home teams have a higher median goal count (approximately 1.5) compared to away teams (approximately 1.0)
@@ -96,7 +96,7 @@ Key observations from the visualizations:
 
 ## 4. Analysis
 
-### 4.1 Statistical test used to test the hypotheses and output (75 words)
+### 4.1 Statistical test used to test the hypotheses and output 
 
 A **Welch's two-sample t-test** was selected for this analysis. This test is appropriate because:
 1. We are comparing means of two independent groups (home vs away goals)
@@ -123,23 +123,23 @@ The extremely small p-value provides overwhelming evidence against the null hypo
 
 ## 5. Evaluation – group's experience at 7COM1079
 
-### 5.1 What went well (75 words)
+### 5.1 What went well 
 
 The project successfully demonstrated the application of statistical methods to real-world sports data. The data acquisition and cleaning process was straightforward, and the large sample size provided robust statistical power. The use of R and RStudio facilitated efficient data analysis and visualization. The research question was well-defined and aligned with established literature, making the analysis meaningful. Version control through GitHub enabled proper code management and collaboration capabilities.
 
-### 5.2 Points for improvement (75 words)
+### 5.2 Points for improvement 
 
 Future iterations could explore additional variables such as tournament type, era effects, or continental differences in home advantage. More sophisticated visualizations could include time-series analysis of home advantage trends. The analysis could be extended to examine whether home advantage varies by team strength or match importance. Additionally, investigating the impact of neutral venues versus true home matches would provide deeper insights into the mechanisms underlying home advantage.
 
-### 5.3 Group's time management (50 words)
+### 5.3 Group's time management 
 
 The project was completed systematically, with clear phases for data exploration, hypothesis formulation, analysis, and reporting. Time was allocated efficiently across tasks, with adequate attention to code documentation and result interpretation. The use of version control facilitated organized workflow management.
 
-### 5.4 Project's overall judgement (50 words)
+### 5.4 Project's overall judgement 
 
 The project successfully achieved its objectives, providing statistically significant evidence for home advantage in international football. The methodology was sound, the analysis was thorough, and the results were clearly communicated. The project demonstrates competency in data science fundamentals including hypothesis testing, visualization, and statistical inference.
 
-### 5.5 Comment on GitHub log output (50 words)
+### 5.5 Comment on GitHub log output 
 
 The GitHub repository contains the complete project history with meaningful commits. Key commits include:
 1. Initial repository setup and data import
@@ -152,15 +152,15 @@ The commit history demonstrates systematic development and proper version contro
 
 ## 6. Conclusions
 
-### 6.1 Results explained (75 words)
+### 6.1 Results explained 
 
 The analysis revealed that home teams score an average of 1.758 goals per match compared to 1.182 goals for away teams, representing a 48.7% increase in scoring for home teams. This difference of 0.576 goals per match is statistically significant (p < 0.0000000000000002) and represents a meaningful advantage. The Welch's t-test confirmed that this difference is not due to random chance, providing strong evidence for the existence of home advantage in international football.
 
-### 6.2 Interpretation of the results (75 words)
+### 6.2 Interpretation of the results 
 
 The results confirm that home advantage is a real and substantial phenomenon in international football. This advantage likely stems from multiple factors including crowd support, familiarity with playing conditions, reduced travel fatigue, and psychological comfort. For teams, coaches, and analysts, this finding emphasizes the importance of home fixtures in tournament qualification and competition success. The magnitude of the advantage (approximately 0.6 goals per match) can significantly impact match outcomes and should be considered in performance analysis and strategic planning.
 
-### 6.3 Reasons and/or implications for future work, limitations (50 words)
+### 6.3 Reasons and/or implications for future work, limitations 
 
 **Limitations:** The analysis does not account for team quality differences, match importance, or temporal changes in home advantage. Neutral venue matches may dilute the effect.
 
