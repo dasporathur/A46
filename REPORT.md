@@ -1,5 +1,6 @@
 # A46 Football Analysis Project Report
 ## 7COM1079 Data Science Project
+**Student ID:** it24063390
 
 ---
 
@@ -194,6 +195,7 @@ commit [hash] - Initial data exploration and project setup
 ---
 
 **Project completed:** December 12, 2025
+**Student ID:** it24063390
 **Dataset:** International football results (1872-2025)
 **Total matches analyzed:** 48,850
 **Statistical significance:** p < 0.0000000000000002
